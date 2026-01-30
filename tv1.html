@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title></title>
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    h1,h2 { font-family: 'Playfair Display', serif; }
+  </style>
+</head>
+
+<body class="bg-[#f5f4f2] text-neutral-900">
+
+<!-- HEADER -->
+<header class="sticky top-0 z-50 bg-yellow-400 backdrop-blur border-b border-yellow-500">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+
+    <!-- Logo -->
+    <h1 class="text-2xl font-black tracking-tight text-blue-900">
+      Spiritz
+    </h1>
+
+    <!-- Desktop Nav -->
+    <nav class="hidden lg:flex gap-7 text-sm font-semibold text-blue-900">
+      <a href="#" class="hover:text-white">Stories</a>
+      <a href="#" class="hover:text-white">Latest News</a>
+      <a href="#" class="hover:text-white">New Launch</a>
+      <a href="#" class="hover:text-white">F&B Buzz</a>
+      <a href="#" class="hover:text-white">Policy Watch</a>
+      <a href="#" class="hover:text-white">Spiritz TV</a>
+      <a href="#" class="hover:text-white">Awards</a>
+      <a href="#" class="hover:text-white">E-Magazine</a>
+      <a href="#" class="text-white bg-blue-900 px-4 py-1.5 rounded-full hover:bg-blue-800">
+        Buy Now
+      </a>
+    </nav>
+
+    <!-- Mobile Menu Button -->
+    <button id="menuBtn" class="lg:hidden text-blue-900 focus:outline-none">
+      <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2"
+           viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round"
+              d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobileMenu"
+       class="lg:hidden hidden bg-yellow-400 border-t border-yellow-500">
+    <nav class="flex flex-col px-6 py-4 space-y-4 text-sm font-semibold text-blue-900">
+      <a href="#" class="hover:text-white">Stories</a>
+      <a href="#" class="hover:text-white">Latest News</a>
+      <a href="#" class="hover:text-white">New Launch</a>
+      <a href="#" class="hover:text-white">F&B Buzz</a>
+      <a href="#" class="hover:text-white">Policy Watch</a>
+      <a href="#" class="hover:text-white">Spiritz TV</a>
+      <a href="#" class="hover:text-white">Awards</a>
+      <a href="#" class="hover:text-white">E-Magazine</a>
+      <a href="#" class="bg-blue-900 text-white px-4 py-2 rounded-full w-fit">
+        Buy Now
+      </a>
+    </nav>
+  </div>
+</header>
+
+<script>
+  const btn = document.getElementById("menuBtn");
+  const menu = document.getElementById("mobileMenu");
+
+  btn.addEventListener("click", () => {
+    menu.classList.toggle("hidden");
+  });
+</script>
+
+
+<!-- HERO IMAGE -->
+
+
+<!-- ARTICLE BODY -->
+<main class="bg-white">
+
+  <article class="max-w-3xl mx-auto px-6 py-16">
+<h1 class="text-4xl md:text-6xl font-extrabold mt-4 leading-tight max-w-4xl">
+      SPIRITZ TV: ThinkPad Sessions at Spiritz Conclave & Achievers' Awards 2025
+
+
+
+      </h1>
+      <p>The 12th edition of the Spiritz Conclave & Achievers Awards was held on October 29 at Le Méridien Gurugram, bringing together key stakeholders from across the alco-bev and hospitality ecosystem. Designed as a full-day engagement, the event unfolded in three well-defined sessions, each focusing on a distinct aspect of alcobev industry.</p>
+ <div class="w-full aspect-video rounded-2xl overflow-hidden">
+  <iframe 
+    class="w-full h-full"
+    src="https://www.youtube.com/embed/QAszWxuwOqY"
+    title="ThinkPad Sessions"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+  </iframe>
+</div>
+
+
+    <!-- POINT 2 -->
+    
+    <p class="leading-relaxed text-neutral-700 mb-10">
+     The morning awards were followed by three intellectually engaging ThinkPad sessions that brought industry leaders, policymakers and experts into focused discussions on the sector’s most pressing issues.
+
+The first session, India Rocks: What Will Shape the Next Decade of Alcobev?, explored future growth drivers.
+
+The second session, License to Grow: How Regulation Shapes Alcobev Expansion in India?, examined policy and regulatory challenges.
+
+The third and final session, India Behind the Bar: Evolving Tastes, Talents and Techniques, highlighted changing consumer preferences, emerging talent and craftsmanship.</p>
+ 
+  </article>
+  
+<!-- NEWSLETTER -->
+<section class="bg-[#062f5b] py-24 reveal-on-scroll
+         opacity-0 translate-y-16
+         transition-all duration-1000 ease-out">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="grid md:grid-cols-2 gap-12 items-center">
+
+      <!-- Left -->
+      <div>
+        <h2 class="text-4xl font-serif text-[#f6c453] mb-4">
+          Stay Ahead with <span class="text-[#ffd873]">Spiritz</span>
+        </h2>
+        <p class="text-[#d6e2f0] mb-8">
+          Get exclusive industry insights, launches & premium stories straight to your inbox.
+        </p>
+
+        <form class="space-y-4 max-w-md">
+          <input
+            type="text"
+            placeholder="Your Name"
+            class="w-full bg-transparent border border-[#f6c453]/50 rounded-lg px-4 py-3
+                   text-[#fdf4d7] placeholder-[#d6e2f0]
+                   focus:outline-none focus:border-[#ffd873]"
+          />
+          <input
+            type="email"
+            placeholder="Email Address"
+            class="w-full bg-transparent border border-[#f6c453]/50 rounded-lg px-4 py-3
+                   text-[#fdf4d7] placeholder-[#d6e2f0]
+                   focus:outline-none focus:border-[#ffd873]"
+          />
+          <button
+            class="w-full bg-[#f6c453] hover:bg-[#ffd873] transition
+                   rounded-lg py-3 font-semibold text-[#062f5b]">
+            Subscribe Now
+          </button>
+        </form>
+      </div>
+
+      <!-- Right Illustration -->
+      <div class="hidden md:flex justify-center">
+        <img src="https://cdn-icons-png.flaticon.com/512/1055/1055687.png"
+             class="w-72 opacity-90 hover:scale-105 transition duration-300">
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-[#062f5b] border-t border-[#f6c453]/30">
+  <div class="max-w-6xl mx-auto px-6 py-16">
+
+    <div class="grid md:grid-cols-4 gap-10 text-sm">
+
+      <!-- Brand -->
+      <div>
+        <h3 class="text-[#f6c453] font-serif text-lg mb-4">Spiritz Magazine</h3>
+        <p class="text-[#d6e2f0]">
+          India’s leading alcobev, luxury & lifestyle publication.
+        </p>
+      </div>
+
+      <!-- Links -->
+      <div>
+        <h4 class="text-[#f6c453] font-semibold mb-4">Company</h4>
+        <ul class="space-y-2 text-[#d6e2f0]">
+          <li class="hover:text-[#ffd873] cursor-pointer">About Us</li>
+          <li class="hover:text-[#ffd873] cursor-pointer">Contact Us</li>
+          <li class="hover:text-[#ffd873] cursor-pointer">Privacy Policy</li>
+          <li class="hover:text-[#ffd873] cursor-pointer">Disclaimer</li>
+        </ul>
+      </div>
+
+      <!-- Social -->
+      <div>
+        <h4 class="text-[#f6c453] font-semibold mb-4">Follow Us</h4>
+        <div class="flex gap-4">
+          <a class="w-10 h-10 flex items-center justify-center rounded-full
+                    border border-[#f6c453]/50
+                    hover:bg-[#f6c453] transition text-[#f6c453] hover:text-[#062f5b]">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a class="w-10 h-10 flex items-center justify-center rounded-full
+                    border border-[#f6c453]/50
+                    hover:bg-[#f6c453] transition text-[#f6c453] hover:text-[#062f5b]">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a class="w-10 h-10 flex items-center justify-center rounded-full
+                    border border-[#f6c453]/50
+                    hover:bg-[#f6c453] transition text-[#f6c453] hover:text-[#062f5b]">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a class="w-10 h-10 flex items-center justify-center rounded-full
+                    border border-[#f6c453]/50
+                    hover:bg-[#f6c453] transition text-[#f6c453] hover:text-[#062f5b]">
+            <i class="fab fa-x-twitter"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- CTA -->
+      <div>
+        <h4 class="text-[#f6c453] font-semibold mb-4">Newsletter</h4>
+        <p class="text-[#d6e2f0] mb-4">
+          No spam. Only premium stories.
+        </p>
+        <button class="bg-[#f6c453] hover:bg-[#ffd873] transition
+                       px-6 py-3 rounded-full text-[#062f5b] font-semibold">
+          Subscribe →
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Bottom -->
+    <div class="border-t border-[#f6c453]/30 mt-12 pt-6 text-center text-[#d6e2f0] text-xs">
+      © 2026 Spiritz Magazine. All Rights Reserved.
+    </div>
+
+  </div>
+
+
+
+  <script>
+  const revealElements = document.querySelectorAll(".reveal-on-scroll");
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.remove(
+            "opacity-0",
+            "translate-y-16",
+            "translate-y-10"
+          );
+          entry.target.classList.add(
+            "opacity-100",
+            "translate-y-0"
+          );
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.15 }
+  );
+
+  revealElements.forEach(el => observer.observe(el));
+</script>
+
+</footer>
+</main>
+
+</body>
+</html>
